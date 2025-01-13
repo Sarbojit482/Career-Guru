@@ -1,0 +1,231 @@
+/* Sidebar */
+.sidebar {
+    width: 70px;
+    height: 100%;
+    background-color: #d7b7b7;
+    position: fixed; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+.sidebar-icon:hover {
+    background-color: #c1c1c1;
+}
+
+/* Main Content */
+.main-content {
+    margin: 10px;
+    border: 10px;
+    border-radius: 100px;
+    margin-left: 80px; /* Matches the width of the sidebar */
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c1c1c1;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color:#fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-icon i {
+    font-size: 50px;
+    color: #333;
+}
+
+.profile-icon:hover {
+    background-color: #f5b7b7;
+}
+
+/* Profile Menu */
+.profile-menu {
+    position: fixed;
+    top: 60px; /* Adjust to match the header's height */
+    right: -250px; /* Hidden initially */
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    padding: 10px;
+
+}
+
+.profile-menu.active {
+    right: 10px; /* Make it visible when active */
+}
+
+.profile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-menu ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.profile-menu ul li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.profile-menu ul li.sign-out {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.profile-menu ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* Add space for the icon */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #d7b7b7;
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d7b7b7;
+    border-radius: 8px;
+}
+
+/* Card */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slightly lifts the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+}
