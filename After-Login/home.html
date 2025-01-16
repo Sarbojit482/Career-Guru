@@ -16,20 +16,18 @@
                 <i class='bx bxs-home'></i>
             </div> 
         </a>
-        <a href="a.html">
+        <a href="News_Page.html">
             <div class="sidebar-icon">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAAL
-                EwEAmpwYAAABiUlEQVR4nO2WzysEYRjHPy1bKwdWEpd13ITaxE2iHDiIG+sP2FKckMI/wMEKFyf/gNoiFykHTqg9OThIcaEc
-                uHCxRlPP1NvbuzNjZvw4zLeew3zf93k+7zzzNDMQ64/VBuSApFz3A8MhosMPdAH4ACzgWg6xItdhotvrTh2oEztAK7AbMG6k
-                zqAbOGc4aYlw2vMDTkp7VXD+N8BOu7flTqcJL9/gqOULPATcf2NSn4H2KMCXhuLvwG2VuABaogDfGcCnhFMMNiputaUM11LA
-                uJIh3QKag7TaiiBmqoHt93JBizFZK4SMPFDHf1MNMAccAGtAg7I2CuzLCyGr+Fnx7LURxbdz16XWLJBwA69qz+RY/AGgoviPQ
-                BpoAp4UvyK/SbZOtFrLbuCyYSAagU2DPw5MGPyi5Oh+2Q18pG1+kfYvGgr1An0Gfx6oBV41/9AN3AU8yMY3YFL8euBc/E9gQ8k
-                pKsXPZK+tKalhyae2Ew+lgB55hqoSkpwx5GRkTR+gtNRKeUFj8VP6AqSw9dtLKghCAAAAAElFTkSuQmCC" alt="classroom">
+                <i class='bx bx-news' ></i>
             </div>
         </a>
         <a href="#">
             <div class="sidebar-icon">
-                <i class='bx bx-news' ></i> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9
+                ElEQVR4nO3TP0oDQRiG8Z+tYOGfImilNxA9iDeQVGnstBSxFU9gq4WVXsDOJa0gpBJsBD2AipVkZHFUCCqbzTALYR94YWaKefi++YaWlk/6CBV
+                TSEgYM9MnPsUcOjnFd1jFZgpxf4w2vuIF3RTiUCPTIz7EIhbiuo648j8PMYO4P8FBXD/U7Eil7xZGMsQ2VvCWSzzEDuZxO8Hl+/GO357sm6+D9
+                1jpLC5xX7PiR2zgAkeYwfN/4rLCUa4mqLqclXX0qr5xqpxjC8t4yiG+wRrOcBwdRQ5xOaC7cbiWsBfPsrX6rzQrLhoQF02Jr3+a3dIiLR//Fbn
+                /d7vItgAAAABJRU5ErkJggg==" alt="leaderboard">
             </div>
         </a>
         <a href="#">
@@ -93,7 +91,106 @@
         document.querySelectorAll('.star').forEach(star => {
             star.addEventListener('click', () => {
                 const level = star.getAttribute('data-level');
-                console.log(`Star level ${level} clicked`);
+                console.log(Star level ${level} clicked);
+                // Placeholder for future navigation/operations
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#">
+            <div class="sidebar-icon">
+                <i class='bx bxs-home'></i>
+            </div> 
+        </a>
+        <a href="News_Page.html">
+            <div class="sidebar-icon">
+                <i class='bx bx-news' ></i>
+            </div>
+        </a>
+        <a href="#">
+            <div class="sidebar-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9
+                ElEQVR4nO3TP0oDQRiG8Z+tYOGfImilNxA9iDeQVGnstBSxFU9gq4WVXsDOJa0gpBJsBD2AipVkZHFUCCqbzTALYR94YWaKefi++YaWlk/6CBV
+                TSEgYM9MnPsUcOjnFd1jFZgpxf4w2vuIF3RTiUCPTIz7EIhbiuo648j8PMYO4P8FBXD/U7Eil7xZGMsQ2VvCWSzzEDuZxO8Hl+/GO357sm6+D9
+                1jpLC5xX7PiR2zgAkeYwfN/4rLCUa4mqLqclXX0qr5xqpxjC8t4yiG+wRrOcBwdRQ5xOaC7cbiWsBfPsrX6rzQrLhoQF02Jr3+a3dIiLR//Fbn
+                /d7vItgAAAABJRU5ErkJggg==" alt="leaderboard">
+            </div>
+        </a>
+        <a href="#">
+            <div class="sidebar-icon">
+                <i class='bx bx-message-rounded-dots'></i>
+            </div>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h1>CAREER GURU</h1>
+            <div class="profile-icon" onclick="toggleProfileMenu()">
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="profile-menu" id="profileMenu">
+                <ul>
+                    <li><i class='bx bxs-user'></i> Profile</li>
+                    <li><i class='bx bx-globe'></i> Language</li>
+                    <li><i class='bx bxs-bell'></i> Notifications</li>
+                    <li><i class='bx bxs-certification'></i> Certificates</li>
+                    <li><i class='bx bxs-message-alt'></i> Discussion Room</li>
+                    <li><i class='bx bxs-note'></i> Notes</li>
+                    <li><i class='bx bxs-folder'></i> Resources</li>
+                    <li class="sign-out"><i class='bx bx-log-out'></i> Sign Out</li>
+                </ul>
+            </div>
+        </div>
+            
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search News">
+            <i class='bx bx-search'></i>
+        </div>
+        <script src="home.js"></script>
+    
+</body>
+<!-- Stars of Levels -->
+<body>
+    <div class="content">
+        <div class="title-container">
+            <h1>Machine Learning</h1>
+            <p>
+                Level up your Machine Learning path step-by-step to obtain Skill++ <br>
+                Start your journey by completing the first star and so on... <br>
+                All the best :D
+            </p>
+        </div>
+        <div class="stars" id="stars-container">
+            <div class="star" data-level="1"></div>
+            <div class="star" data-level="2"></div>
+            <div class="star" data-level="3"></div>
+            <div class="star" data-level="4"></div>
+            <div class="star" data-level="5"></div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.star').forEach(star => {
+            star.addEventListener('click', () => {
+                const level = star.getAttribute('data-level');
+                console.log(Star level ${level} clicked);
                 // Placeholder for future navigation/operations
             });
         });
